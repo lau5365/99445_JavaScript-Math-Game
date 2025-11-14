@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Math Quiz Game</h1>
+
+        <div id="timer">Time: 15</div>
+
+        <div id="question-box">
+            <p id="question">Click Start to Begin!</p>
+        </div>
+
+        <input type="number" id="answer" placeholder="Your answer" disabled>
+
+        <div class="buttons">
+            <button id="start-btn">Start</button>
+            <button id="submit-btn" disabled>Submit</button>
+        </div>
+
+        <p id="feedback"></p>
+        <p id="score">Score: 0</p>
+    </div>
+
+    <!-- Sound Effects -->
+    <audio id="correct-sound" src="correct.mp3"></audio>
+    <audio id="wrong-sound" src="wrong.mp3"></audio>
+    <audio id="timeout-sound" src="timeout.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
